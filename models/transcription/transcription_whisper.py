@@ -15,6 +15,9 @@ _MODELS = {
     "large-v1": "Systran/faster-whisper-large-v1",
     "large-v2": "Systran/faster-whisper-large-v2",
     "large-v3": "Systran/faster-whisper-large-v3",
+    "faster-small": "Systran/faster-distil-whisper-small.en",
+    "faster-medium": "Systran/faster-distil-whisper-medium.en",
+    "faster-large-v3": "Systran/faster-distil-whisper-large-v3",
 }
 
 _FILENAMES = [
@@ -96,3 +99,6 @@ if __name__ == "__main__":
     downloadWhisperWeight("./", "large-v1", callback)
     downloadWhisperWeight("./", "large-v2", callback)
     downloadWhisperWeight("./", "large-v3", callback)
+    downloadWhisperWeight("./", "faster-small", callback)
+    downloadWhisperWeight("./", "faster-medium", callback)
+    downloadWhisperWeight("./", "faster-large-v3", callback)
